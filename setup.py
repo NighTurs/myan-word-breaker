@@ -110,6 +110,6 @@ setup(
     #
     #   py_modules=["my_module"],
     #
-    packages=find_packages('word_breaker'),  # Required
-
+    package_data={'': ['corpus/*.txt', 'dictionary/*.txt']},
+    packages=find_packages(),  # Required
 )
